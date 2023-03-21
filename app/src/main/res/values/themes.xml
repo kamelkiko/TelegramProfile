@@ -1,0 +1,67 @@
+<resources>
+
+    <style name="Theme.TelegramProfile" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/base</item>
+        <item name="colorPrimaryVariant">@color/base</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/large_margin</item>
+        <item name="android:padding">@dimen/small_padding</item>
+    </style>
+
+    <style name="TextInfo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/large_margin</item>
+        <item name="android:padding">@dimen/small_padding</item>
+    </style>
+
+    <style name="TextInfo.Title">
+        <item name="android:layout_marginTop">@dimen/large_margin</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/text_color_blue</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextInfo.Body">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textColor">@color/text_large_color</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextInfo.Info">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/text_small_color</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextTab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/large_margin</item>
+        <item name="android:layout_marginStart">@dimen/large_margin</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="TextTab.Selected">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/text_color_blue</item>
+    </style>
+
+    <style name="TextTab.NonSelected">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:layout_marginBottom">@dimen/large_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

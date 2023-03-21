@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/telegramMotion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/headerBackground"
+        android:layout_width="@dimen/no_width"
+        android:layout_height="@dimen/view_height"
+        android:background="@color/base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardProfile"
+        android:layout_width="@dimen/card_size"
+        android:layout_height="@dimen/card_size"
+        app:cardCornerRadius="@dimen/no_radius"
+        app:cardElevation="@dimen/no_elevation"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/profile_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/kamel" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/extra_large_margin" />
+
+    <TextView
+        android:id="@+id/nameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/kamel_mohamed"
+        android:textColor="@color/text_large_color"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/statusField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/_818_subscribers"
+        android:textColor="@color/text_small_color"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintStart_toStartOf="@id/nameField"
+        app:layout_constraintTop_toBottomOf="@id/nameField" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        style="@style/Icon"
+        android:layout_marginStart="@dimen/small_margin"
+        android:contentDescription="@string/arrow_back_image"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menuButton"
+        style="@style/Icon"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:contentDescription="@string/menu"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/second_color">
+
+            <TextView
+                android:id="@+id/text_info"
+                style="@style/TextInfo.Title"
+                android:text="@string/info"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_link"
+                style="@style/TextInfo.Body"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/t_me_kamel_mohamed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_info" />
+
+            <TextView
+                android:id="@+id/text_invite"
+                style="@style/TextInfo.Info"
+                android:text="@string/invite_link"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_link" />
+
+            <ImageView
+                style="@style/Icon"
+                android:layout_marginEnd="@dimen/large_margin"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:contentDescription="@string/qr"
+                android:src="@drawable/ic_baseline_qr_code_24"
+                app:layout_constraintBottom_toTopOf="@id/line"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/large_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="#DE121212"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_invite" />
+
+            <TextView
+                android:id="@+id/text_notification"
+                style="@style/TextInfo.Body"
+                android:text="@string/notification"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line" />
+
+            <TextView
+                android:id="@+id/text_onOff"
+                style="@style/TextInfo.Info"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:text="@string/on"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_notification" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:background="#DE121212"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/switchBtn"
+                app:layout_constraintTop_toBottomOf="@id/line" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line"
+                app:thumbTint="@color/base"
+                app:trackTint="@color/text_color_blue" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/third_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_info" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/line2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/second_color"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/second_color"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_media"
+                    style="@style/TextTab.Selected"
+                    android:text="@string/media" />
+
+                <View
+                    android:layout_width="56dp"
+                    android:layout_height="4dp"
+                    android:layout_marginStart="@dimen/large_margin"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@color/blue" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_files"
+                style="@style/TextTab.NonSelected"
+                android:text="@string/files" />
+
+            <TextView
+                android:id="@+id/text_links"
+                style="@style/TextTab.NonSelected"
+                android:text="@string/links" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

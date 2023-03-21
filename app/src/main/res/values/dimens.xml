@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="no_width">0dp</dimen>
+    <dimen name="view_height">240dp</dimen>
+    <dimen name="no_elevation">0dp</dimen>
+    <dimen name="card_size">150dp</dimen>
+    <dimen name="no_radius">0dp</dimen>
+    <dimen name="extra_large_margin">340dp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+    <dimen name="large_margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="small_stroke">1dp</dimen>
+</resources>

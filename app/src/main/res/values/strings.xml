@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TelegramProfile</string>
+    <string name="profile_image">profile_image</string>
+    <string name="kamel_mohamed">Kamel Mohamed</string>
+    <string name="_818_subscribers">818 subscribers</string>
+    <string name="arrow_back_image">arrow_back_image</string>
+    <string name="menu">menu</string>
+    <string name="info">Info</string>
+    <string name="t_me_kamel_mohamed">t.me/KamelMohamed</string>
+    <string name="invite_link">Invite link</string>
+    <string name="qr">qr</string>
+    <string name="notification">Notification</string>
+    <string name="on">On</string>
+    <string name="media">Media</string>
+    <string name="files">Files</string>
+    <string name="links">Links</string>
+</resources>
